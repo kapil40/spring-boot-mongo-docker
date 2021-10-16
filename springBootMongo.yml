@@ -87,7 +87,8 @@ spec:
   ports:
   - port: 80
     targetPort: 8080
-  type: NodePort
+  externalIPs:
+    - 1.2.4.114
 ---
 # Mongo db pod with volumes(HostPath)
 apiVersion: apps/v1
